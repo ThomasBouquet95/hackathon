@@ -1,0 +1,90 @@
+[
+  {
+    "name"              : "TrainStation1",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : true,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "192.168.0.101",
+      "RPC_PORT"        : "8042",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "TrainStation1",
+      "WS_SERVER"       : "ws://dashboard:3000",
+      "WS_SECRET"       : "OurDashSecret93%",
+      "VERBOSITY"       : 3
+    }
+
+  },
+  {
+    "name"              : "TrainStation2",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : true,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "192.168.0.103",
+      "RPC_PORT"        : "8042",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "TrainStation2",
+      "WS_SERVER"       : "ws://dashboard:3000",
+      "WS_SECRET"       : "OurDashSecret93%",
+      "VERBOSITY"       : 3
+    }
+
+  },
+  {
+    "name"              : "TrainStation3",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : true,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "192.168.0.104",
+      "RPC_PORT"        : "8042",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "TrainStation3",
+      "WS_SERVER"       : "ws://dashboard:3000",
+      "WS_SECRET"       : "OurDashSecret93%",
+      "VERBOSITY"       : 3
+    }
+
+  },
+  {
+    "name"              : "Miner",
+    "script"            : "app.js",
+    "log_date_format"   : "YYYY-MM-DD HH:mm Z",
+    "merge_logs"        : false,
+    "watch"             : true,
+    "max_restarts"      : 10,
+    "exec_interpreter"  : "node",
+    "exec_mode"         : "fork_mode",
+    "env":
+    {
+      "NODE_ENV"        : "production",
+      "RPC_HOST"        : "192.168.0.101",
+      "RPC_PORT"        : "8042",
+      "LISTENING_PORT"  : "30303",
+      "INSTANCE_NAME"   : "Miner",
+      "WS_SERVER"       : "ws://dashboard:3000",
+      "WS_SECRET"       : "OurDashSecret93%",
+      "VERBOSITY"       : 3
+    }
+
+  }
+]
