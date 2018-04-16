@@ -14,7 +14,7 @@ The IP `92.168.0.104` was used for node3
 
 You will also need to change the same file on each RP. The file is present in the folder `ChainSkills/node`. The four files (3 on each RP and one on the miner computer) need to be the same.
 
-### 2) Edit the file `startminer1.sh`
+##### 2) Edit the file `startminer1.sh`
 
 You can replace `--rpcport "8042" --rpcaddr "192.168.0.101"` by the ip of the computer and the port that you want to use to communicate via rpc
 
@@ -34,15 +34,15 @@ To start it as a background process : `nohup ./startminer1.sh &`
 
 You will need to put the folder `PIs/RP1` on RP1, `PIs/RP2` on RP2, `PIs/RP3` on RP3
 
-1) Edit the file `static-nodes.json` (which is in the folder ChainSkills/node) and change the ip address for each enode. You shoud have done it in the section miner1 1). This file needs to be exactly the same as the file on your computer.
+##### 1) Edit the file `static-nodes.json` (which is in the folder ChainSkills/node) and change the ip address for each enode. You shoud have done it in the section miner1 1). This file needs to be exactly the same as the file on your computer.
 
 Follow the instruction section miner1 1)
 
-2) Same instruction as in section miner1 2), but the starting file is `startnode.sh`
+##### 2) Same instruction as in section miner1 2), but the starting file is `startnode.sh`
 
 ## Ethstats
 
-1) Edit the file `app.json` which is in the folder `monitor`
+Edit the file `app.json` which is in the folder `monitor`
 
 Change   `"RPC_HOST"        : "192.168.0.101", and "RPC_PORT"        : "8042"` with the RPC IP address and RPC port of each node (TrainStation1 refers to RP1, TrainStation2 refers to RP2, TrainStation3 refers to RP3, and Miner refers to your computer).
 
@@ -67,17 +67,17 @@ Then browse to : http://localhost:8000 to access the blockchain explorer
 
 ## program on each PI to read sensors data and store it to the blockchain
 
-### 1) On each PI modify the file `test.js` (or `sensors.js`, I don't know @TODO ) which is in the folder `ChainSkills/code`
+##### 1) On each PI modify the file `test.js` (or `sensors.js`, I don't know @TODO ) which is in the folder `ChainSkills/code`
 
 replace `const NODE = 'http://192.168.0.101:8042'` by the RPC address and port of your computer where the miner will be running (these values are defined in the section miner1 2) )
 
-### 2) Start the program @TODO
+##### 2) Start the program @TODO
 
 ## MQTT @TODO
 
 The folder related to that is `TrainRecordData`
 
-### Start the demo
+## Start the demo
 
 To start the demo, follow this order :
 
