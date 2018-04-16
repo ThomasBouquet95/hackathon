@@ -1,5 +1,5 @@
 
-## miner1
+## Miner1
 
 Prior to run miner1, you will need to modify a few files.
 
@@ -30,7 +30,7 @@ Start the miner: `./startminer1.sh`
 To start it as a background process : `nohup ./startminer1.sh &`
 
 
-## node 1, 2, and 3
+## Node 1, 2, and 3
 
 You will need to put the folder `PIs/RP1` on RP1, `PIs/RP2` on RP2, `PIs/RP3` on RP3
 
