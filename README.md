@@ -5,7 +5,7 @@ Prior to run miner1, you will need to modify a few files.
 
 You need to have : the IP of your computer , IP of RP1, IP of RP2, and IP of RP3
 
-### 1) Edit the file "static-nodes.json" and change the ip address for each enode. For instance, replace 92.168.0.101 by the ip of RP1.
+##### 1) Edit the file "static-nodes.json" and change the ip address for each enode. For instance, replace 92.168.0.101 by the ip of RP1.
 
 The IP `92.168.0.101` was used for node1
 The IP `92.168.0.102` was used for miner1
